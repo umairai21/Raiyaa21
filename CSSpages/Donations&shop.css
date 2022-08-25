@@ -1,0 +1,367 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+header{
+  position: relative;
+  top: -20px;
+}
+img{
+  border-radius: 12px;
+  margin: 20px;
+}
+a{
+  text-decoration: none;
+}
+fieldset{
+  padding: 50px;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+legend{
+  background-color: transparent;
+  padding: 10px;
+  font-size: 28px;
+}
+label{
+  margin-right: 20px;
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #28965A;
+  font-family: 'Poppins', sans-serif;
+  margin:20px 0 0 0;
+  padding: 0px 40px;
+  
+}
+
+/* Links inside the navbar */
+.navbar {
+  overflow: hidden;
+  background-color: #28965A;
+  font-family: 'Poppins', sans-serif;
+  margin:20px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Poppins', sans-serif; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #2A6041;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a:active{
+  background-color: #abdbe0;
+  color:purple;
+}
+#navselect{
+  padding: 4px;
+  border-radius: 12px;
+}
+
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin:10px 20px 10px 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  width: 250px;
+}
+  /*styling the language choosing bar */
+  #navselect{
+    float:right;
+    color: white;
+    background-color: black;
+    margin:15px 20px 10px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .donation #note{
+    margin:3% 0 0 3%;
+    font-size:20px;
+    text-align: center;
+    color: rgb(219, 82, 82); 
+}
+
+#select,#select1,#select2{
+  float:right;
+    color: white;
+    background-color:#04AA6D; ;
+    margin:0 20px 10px 0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+input[type=radio]{
+  width:40px;
+  padding:5px;
+}
+
+input[type=text],input[type=text],input[type=number],input[type=email],input[type=month]{
+  width:300px;
+  padding: 8px;
+  margin: 1% 0 1% 0;
+}
+
+input[type=submit],input[type=reset]{
+    background-color: #28965A;
+    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor:pointer;
+    border-radius: 30px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+
+.container #imagetext{
+    color: #800000;
+    margin: 60px 0px;
+    font-size: 4rem;
+    line-height: 120%;
+    font-weight:600;
+    letter-spacing: -2px;
+
+}
+#front_img{
+  position: relative;
+  width: 70%;
+  left: 15%;
+}
+.main_container{
+  padding: 0px 80px;
+}
+
+.merch article{
+    font-size: 15px;
+    font-family: cursive;
+    margin:3% 0 4% 5%
+}
+
+.merch select,button{
+    margin:0 0 0 5%;
+}
+
+.merch button{
+    background-color: #04AA6D;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+.item_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item_container .card{
+  border: 2px #28965A solid;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 22px;
+  height: 550px;
+}
+#options,#options1,#options2,#options3,#options4,#options5{
+  padding: 5px 10px;
+  border: 2px #28965A solid;
+  margin-bottom: 20px;
+}
+.selections{
+  display: flex;
+  flex-direction: column;
+}
+
+hr{
+  color: darkgray;
+  margin:2% 0  0;
+}
+
+.JS{
+  display: flex;
+  position: relative;
+}
+
+.addtofav,.ordtofav,.clp{
+  display:flex;
+  padding: 8px 8px 8px 8px;
+  margin: 3% 5% 0 10%;
+  background-color: #04AA6D;
+  width: 50%;
+  font-size: 15px;
+}
+
+.clp{
+  width: 14%;
+}
+
+
+
+
+.footer{
+  margin-top: 50px;
+  background-color: #2A6041;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  color: white;
+}
+.footer_heading{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer_part ul li{
+  list-style: none;
+  margin-bottom: 8px;
+}
+.footer_part ul li a{
+  color: white;
+  opacity: 0.8;
+  transition: ease .2s;
+}
+.footer_part ul li a:hover{
+  opacity: 1;
+}
+.footer_part:nth-child(1) ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_part:nth-child(1) ul li a{
+  font-size: 28px;
+  margin: 0px 10px 0px 10px
+}
+
+
+
+
+
+
+
+@media (max-width: 720px){
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_part{
+    margin-bottom: 70px;
+  }
+  .footer_part  ul li{
+    text-align: center;
+  }
+  .container #imagetext{
+    color: #28965A;
+    margin: 50px 0px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 120%;
+    font-weight:600;
+    letter-spacing: -2px;
+  }
+}
+
+#donate{
+  background-color: green;
+  border: 2px solid black;
+  border: 3px;
+  width:20%;
+  font-size: 20px;
+}

@@ -1,0 +1,383 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Navbar container */
+.navbar{
+  background-color: #1d8048;
+  height: 60px;
+  padding: 0px 50px;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Poppins', sans-serif; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #2A6041;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a:active{
+  background-color: #abdbe0;
+  color:purple;
+}
+
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin:10px 0px 10px 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+  /*styling the language choosing bar */
+  #select{
+    float:right;
+    margin:15px 20px 10px 0;
+  }
+
+  /*styling the main image */
+ .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+  }
+  
+  /*styling the text in the main image*/
+#text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color:black;
+}
+#heading-things{
+  text-align: center;
+}
+
+h1{
+  font-size: 40px;
+  margin:3% 0 0 5%;
+  text-decoration: underline blueviolet;
+}
+
+h3{
+  font-size: 40px;
+  margin:3% 0 0 15%;
+}
+
+.heading2 img{
+  margin:5% 0 0 5% ;
+  border:3px solid black;
+  padding:3px
+}
+
+.heading2 article{
+  font-size:30px;
+  font-family: cursive;
+  margin: 3% 0 0 5%
+}
+
+.heading2 a{
+  margin-left:30%;
+  font-size: 30px;
+  font-family: monospace;
+  text-decoration: none;
+  color:darkblue;
+}
+
+.activities img{
+  margin:5% 0 0 5% ;
+  border:3px solid black;
+  padding:3px
+}
+
+.activities article{
+  font-size:30px;
+  font-family: cursive;
+  margin: 3% 0 0 5%
+}
+
+
+.heritage h3{
+  margin:5% 0 0 10%;
+}
+
+.heritage img{
+  margin:5% 0 0 10% ;
+  transition: transform .2s; /* Animation */
+}
+
+.heritage img:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.camping h3{
+  margin-left: 35%;
+}
+
+.camping img{
+  margin: 2% 0 2% 35%;
+}
+
+.camping article{
+  font-size:30px;
+  font-family: cursive;
+  text-align: center;
+}
+
+
+hr{
+  color: purple;
+  margin:2% 0 2% 0;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container{
+  max-width: 700px;
+  text-align: center;
+}
+.main_section{
+  margin-bottom: 100px;
+  text-align: center;
+  border: 2px #2A6041 solid;
+  padding: 28px;
+  border-radius: 22px;
+  margin: 50px;
+}
+.main_section p{
+  max-width: 500px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.main_section img{
+  border: none;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+}
+.main_section a{
+  font-size: 16px;
+  letter-spacing: 0;
+  color: white;
+  background-color: #2A6041;
+  padding: 8px 20px;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
+  left: 100px;
+  font-family: poppins;
+  transition: ease-in-out .2s;
+}
+#location_img,#location_img1,#location_img2{
+  background-color: transparent;
+  position: relative;
+  right: 120px;
+}
+.main_section a:hover{
+  transform: translateX(-5px);
+}
+.footer{
+  margin-top: 50px;
+  background-color: #2A6041;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  color: white;
+}
+.footer_heading{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer_part ul li{
+  list-style: none;
+  margin-bottom: 8px;
+}
+.footer_part ul li a{
+  color: white;
+  opacity: 0.8;
+  transition: ease .2s;
+}
+.footer_part ul li a:hover{
+  opacity: 1;
+}
+.footer_part:nth-child(1) ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer_part:nth-child(1) ul li a{
+  font-size: 28px;
+  margin: 0px 10px 0px 10px
+}
+
+
+
+
+
+@media (max-width: 1300px){
+  .other_acts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+}
+@media (max-width: 720px){
+  .other_acts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hiking_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hiking_part img{
+    width: 85%;
+    height: auto;
+    margin: 20px 0px;
+    padding: 0;
+  }
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_part{
+    margin-bottom: 70px;
+  }
+  .footer_part  ul li{
+    text-align: center;
+  }
+}
+
+fieldset{
+  background-color: peachpuff;
+  width: 500px;
+}
+.ticket-booking{
+  font-size: 25px;
+  padding: 10px;
+}
+
+#ticket-type{
+    font-size: 12px;
+}
+
+select,input{
+  border: 2px solid green;
+}
+
+option{
+  font-size: 15px;
+}
+
+label{
+  font-size: 20px;
+  margin: 0 0 0 2%;
+}
+
+input{
+  padding: 3px;
+}
+
+ #addorder,#placeorder{
+  margin: 0 10% 5% 20%;
+  font-size: 15px;
+  padding: 3px;
+}
+
+
+.output-area{
+  margin-left: 17%;
+}
+
+.output-area p{
+  font-size: 20px;
+  
+}
+
+.display{
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 30%;
+}
+
+.fieldset{
+  margin-left: 25%;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSSpages/Donations&shop.css" type="text/css">
+    <title>Donations and Shop</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <header>
+        <!--HTML code for navigation bar-->
+            <section class="navbar">
+                <a href="./Home-Page.html">Home</a>
+                <a href="./Activities.html" target="_blank">Activities</a>
+                <a href="./Beaches.html" target="_blank">Beaches</a>
+                <a href="./Wild-life-attractions.html" target="_blank">Wild Life Attractions</a>
+                <a href="./Hotels.html" target="_blank">Hotels</a>
+                <a href="./Donations&shop.html" target="_blank">Donations and Shop</a>
+                <section class="dropdown">
+                  <button class="dropbtn">Heritage Locations
+        <!--HTML code for dropdwon navigation bar-->
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <section class="dropdown-content">
+                    <a href="./Sigiriya-Rock.html" target="_blank">Sigiriya</a>
+                    <a href="./Sri-dalada-maligawa.html" target="_blank">Sri Dalada Maligawa</a>
+                  </section>
+                </section>
+                <form class="search">
+                    <input type="text" placeholder="search here" class="search_here">
+                </form>
+        <!--HTML code for language selection-->    
+                <select id="navselect">
+                    <option value="0">EN</option>
+                    <option value="1">Sinhala</option>
+                    <option value="2">Tamil</option>
+                </select>
+         
+            </section>
+    </header> 
+
+
+<div class="main_container">
+
+<img src="./Sample images/donation bg.jpg" alt="donations image" id="front_img">
+
+    <section class="donation">
+         <form>
+            <fieldset>
+            <legend>DONATION FORM</legend>
+
+            <input type="radio" id="hundred" value="100" name="amount-donated">
+            <label for="hundred">100</label>
+
+           <br>
+           <input type="radio" id="twofifty" value="250" name="amount-donated">
+           <label for="twofifty">250</label>
+           
+           <br>
+           <input type="radio" id="fivehundred" value="500" name="amount-donated">
+           <label for="fivehundred">500</label>
+           
+           <br>
+           <input type="radio" id="thousand" value="1000" name="amount-donated">
+           <label for="thousand">1000</label>
+           
+           <br>
+           <input type="radio" id="twothousandfivehundred" value="2500" name="amount-donated">
+           <label for="twothousandfivehundred">2500</label>
+           
+           <br>
+           <input type="radio" id="fivethousand" value="5000" name="amount-donated">
+           <label for="fivethousand">5000</label>
+         
+           <br>
+           <input type="radio" id="tenthousand" value="10,000" name="amount-donated">
+           <label for="tenthousand">10,000</label>
+          
+           <br>
+
+           <label for="name">Card holder name:</label><br>
+           <input type="text" id="name" required>
+           <br>
+           <label for="card-number">Card Number:</label><br>
+           <input type="number" id="card-number" required placeholder="1234-xxxx-xxxx-xxxx" minlength="16" maxlength="16">
+           <br>
+           <label for="expiry">Expiry Date:</label><br>
+           <input type="month" id="expiry" required>
+           <br>         
+           <label for="email">Email</label><br>
+           <input type="email" id="email">
+           <br>
+           <br>
+            <button type onclick="notifyFunction()" id="donate" value="donate">DONATE</button>
+            <br>
+
+
+            <article id="note">
+                NOTE! payments can only be done through a credit card or debit card
+            </article>
+
+            <br>
+
+            </fieldset>
+       </form>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="container">
+        <img src="./Sample images/merch main.jpg" alt="BG" width="1000">
+        <article id="imagetext">GET YOUR EXCLUSIVE MERCHANDISE</article>
+    </section>
+
+    <br>
+
+   
+
+<br>
+<br>
+<br>
+
+    <section class="merch">
+        <div class="item_container">
+            <div class="card">
+                <div class="card_content">
+                    <img src="./Sample images/tshirt merch.jpg" alt="tshirt"><br>
+                    <p>2500.00LKR</p><br>
+                    <div class="selections">
+                        <p>
+                        <label>Size:</label>
+                        <input type="radio" name="tshirt">Small
+                        <input type="radio" name="tshirt">Large
+                        <input type="radio" name="tshirt">Medium 
+                        </p>
+                        <br>
+                        <p>
+                            <label>Colour:</label>
+                            <input type="radio" name="Colour">blue
+                            <input type="radio" name="Colour">Black
+                            <input type="radio" name="Colour">Grey
+                        </p>
+                       
+                       <button type="button" class="addtofav">Add To Favourites</button> 
+                       <button type="button" class="ordtofav">Order Favourites</button> 
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_content">
+                    <img src="./Sample images/trousers merch.jpg"  alt="trousers" width="225" height="225"><br>
+                    <p>1500.00LKR</p><br>
+                    <div class="selections">
+                        <p>
+                            <label>Size:</label>
+                            <input type="radio" name="tshirt">Small
+                            <input type="radio" name="tshirt">Large
+                            <input type="radio" name="tshirt">Medium 
+                        </p>
+                            <br>
+                            <p>
+                                <label>Colour:</label>
+                                <input type="radio" name="Colour">blue
+                                <input type="radio" name="Colour">Black
+                                <input type="radio" name="Colour">Grey
+                            </p>
+                           
+                        <button type="button" class="addtofav">Add To Favourites</button> 
+                       <button type="button" class="ordtofav">Order Favourites</button> 
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_content">
+                    <img src="./Sample images/caps merch.jpg" alt="caps">
+                    <br>
+                    <p>500.00LKR</p><br>
+                    <div class="selections">
+                        <p>
+                            <label>Size:</label>
+                            <input type="radio" name="tshirt">Small
+                            <input type="radio" name="tshirt">Large
+                            <input type="radio" name="tshirt">Medium 
+                        </p>
+                            <br>
+                            <p>
+                                <label>Colour:</label>
+                                <input type="radio" name="Colour">blue
+                                <input type="radio" name="Colour">Black
+                                <input type="radio" name="Colour">Grey
+                            </p>
+                          
+
+                        <button type="button" class="addtofav">Add To Favourites</button> 
+                       <button type="button" class="ordtofav">Order Favourites</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<section class="JS">
+   
+    <button type="button" class="clp">Check Loyalty Points</button>
+</section>
+<div class="display">
+    <label>Current order</label>
+    <input type="text" name="currorder" width="40">
+</div>
+
+      
+    <footer class="finish" >
+        <div class="footer">
+            <div class="footer_part">
+                <h4 class="footer_heading">Catch Us On</h4> 
+                <ul>
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <div class="footer_part">
+                <h4 class="footer_heading">MY WEBSITE</h4>
+                <ul>
+                    <li><a href="sitemap">Sitemap</a></li>
+                    <li><a href="TOU">Terms of Use</a></li>
+                    <li><a href="PP">Privacy Policy</a> </li>
+                    <li><a href="CU">Contact Us</a> </li>
+                </ul>
+            </div>
+
+            <div class="footer_part">
+                <h4 class="footer_heading">REFERENCES</h4>
+                <ul>
+                    <li><a href="https://www.britannica.com/" target="_blank">Britannica</a></li>
+                    <li><a href="https://www.srilanka.travel/" target="_blank">Sri Lanka Travel</a></li>
+                    <li><a href="https://www.planetware.com/" target="_blank">Planetware</a></li>
+                    <li><a href="https://lk.lakpura.com/" target="_blank">Lakpura</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
